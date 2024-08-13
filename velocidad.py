@@ -1,4 +1,4 @@
-# Definimos la lista de velocidades
+# Definir la lista de velocidades
 velocidades = [
     25, 12, 19, 16, 11, 11, 24, 1, 14, 14, 16, 10, 6, 23, 13, 25, 4, 19,
     14, 20, 18, 9, 18, 4, 18, 1, 3, 4, 2, 14, 23, 19, 23, 9, 18, 20, 22,
@@ -10,13 +10,13 @@ velocidades = [
 def calcular_promedio(lista):
     return sum(lista) / len(lista)
 
-# Función para encontrar las posiciones con velocidades por encima del promedio
+# Función es para encontrar las posiciones con velocidades por encima del promedio
 def alertas_telematicas(lista):
     promedio = calcular_promedio(lista)
     alertas = [i for i, v in enumerate(lista) if v > promedio]
     return alertas
 
-# Llamada a la función y mostrar las posiciones con alertas
+# Llamaar a la función y mostrar las posicionescon una aleta
 if __name__ == "__main__":
     resultado = alertas_telematicas(velocidades)
     print(resultado)

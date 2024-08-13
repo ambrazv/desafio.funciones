@@ -1,13 +1,12 @@
 def filtrar_productos(precios, umbral, condicion="mayor"):
-  """Filtra los productos de un diccionario según un umbral y una condición.
 
-  Args:
+  """Arg
     precios: Un diccionario con los productos y sus precios.
     umbral: El valor umbral para la comparación.
     condicion: La condición de comparación ("mayor" o "menor").
 
   Returns:
-    Una lista con los nombres de los productos que cumplen la condición. """
+    Una lista con los nombres de los productos"""
 
   productos_filtrados = []
   for producto, precio in precios.items():
@@ -20,7 +19,7 @@ if __name__ == "__main__":
 
   precios = {'Notebook': 700000, 'Teclado': 25000, 'Mouse': 12000, 'Monitor': 250000, 'Escritorio': 135000, 'Tarjeta de Video': 1500000}
 
-  # Obtener argumentos de la línea de comandos
+  # Obtener argumentos 
   umbral = int(sys.argv[1])
   condicion = "mayor" if len(sys.argv) == 2 else sys.argv[2]
 
