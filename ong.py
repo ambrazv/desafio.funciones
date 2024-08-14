@@ -24,19 +24,12 @@ def calcular(fact_1, prod_1, fact_2):
 
 
 # Genero los input para el usuario (niño/a)
-
-ingreso = input(
-    "¿Qué quieres calcular? Para factorial escribe 'fact', o 'prod', para productoria: "
+fact_1 = int(input("Ingresa un número para calcular la primera factorial: "))
+prod_1 = input(
+    "Ingresa la lista de números para calcular la productoria (separados por coma): "
 )
-if ingreso == "fact":
-    numero = int(input("Ingresa un número para calcular factorial: "))
-    resultado = calcular_factorial(numero)
-    print(f"El factorial del {numero} es {resultado}")
+fact_2 = int(input("Ingresa el número para calcular la segunda factorial: "))
 
-elif ingreso == "prod":
-    lista = input(
-        "Ingrese una lista de números ej. 1,2,3,4, para calcular productoria: "
-    )
-    numeros = list(map(int, lista.split(",")))
-    resultado = calcular_productoria(numeros)
-    print(f"La productoria de {numeros} es {resultado}")
+prod_1 = list(map(int, prod_1.split(",")))
+
+calcular(fact_1, prod_1, fact_2)
