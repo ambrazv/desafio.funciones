@@ -12,6 +12,17 @@ def calcular_productoria(lista):
     return resultado
 
 
+def calcular(fact_1, prod_1, fact_2):
+    factorial_1 = calcular_factorial(fact_1)
+    print(f"El factorial de {fact_1} es {factorial_1}")
+
+    productoria = calcular_productoria(prod_1)
+    print(f"La productoria de {prod_1} es {productoria}")
+
+    factorial_2 = calcular_factorial(fact_2)
+    print(f"El factorial de {fact_2} es {factorial_2}")
+
+
 # Genero los input para el usuario (niño/a)
 
 ingreso = input(
